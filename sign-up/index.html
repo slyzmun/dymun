@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/dymun/img/icon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/dymun/img/apple-touch-icon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <title>DYMUN报名通道</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Microsoft YaHei", sans-serif;
+            background-color: white;
+        }
+
+        .header-banner {
+            width: 100%;
+            height: 400px;
+            background-color: #1691cd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .function-nav {
+            padding: 4.5rem 6rem;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .nav-item {
+            color: #1691cd;
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding: 12px 24px;
+            border: 2px solid #1691cd;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+        }
+
+        .footer {
+            background-color: #1691cd;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .header-banner {
+                width: 100%;
+                height: 230px;
+                background-color: #1691cd;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .function-nav {
+                padding: 50px 120px 0px 120px;
+                line-height: 2.5;
+            }
+
+            .nav-item {
+                color: #1691cd;
+                text-decoration: none;
+                font-size: 1.2rem;
+                padding: 0px 24px;
+                border: 2px solid #1691cd;
+                border-radius: 50px;
+                transition: all 0.3s ease;
+            }
+
+            .footer {
+                text-align: center;
+                padding: 1.3rem 0;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+<script src="https://jsj.top/f/L2VK2d/embedded.js?inner_redirect=false&banner=show&background=white&height=2275"></script>
+
+
+    <!-- SweetAlert JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            Swal.fire({
+                text: '请点击下方按钮继续',
+                icon: 'success',
+                title: "欢迎进入DYMUN报名通道", 
+                confirmButtonText: '立即报名',
+                confirmButtonColor: '#1691cd',
+                allowOutsideClick: false,
+                allowOutsideClick: false,
+                allowEscapeKey: false
+            });
+        });
+    </script>
+    
+</body>
+
+</html>    
