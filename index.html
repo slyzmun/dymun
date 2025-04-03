@@ -111,15 +111,18 @@
     <!-- SweetAlert JS -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
-        // 弹窗
         document.addEventListener('DOMContentLoaded', function() {
             Swal.fire({
                 text: '对不起，报名通道暂未开放！',
-                icon: 'info',
+                icon: 'error',
                 confirmButtonText: '我知道了',
                 confirmButtonColor: '#1691cd',
                 allowOutsideClick: false,
                 allowEscapeKey: false
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    window.location.replace("https://slyzmun.github.io/");
+                }
             });
         });
     </script>
