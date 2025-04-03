@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="/dymun/img/icon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="/dymun/img/apple-touch-icon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
     <title>DYMUN报名通道</title>
     <style>
         * {
@@ -103,11 +104,26 @@
         <img src="/dymun/img/banner.webp" alt="东营市中学生模拟联合国协会" style="width: 100%; height: 100%; object-fit: cover;">
     </header>
 
-<p>对不起，报名通道暂未开放！</p>
-
     <footer class="footer">
         <p>&copy 东营市中学生模拟联合国协会</p>
     </footer>
+
+    <!-- SweetAlert JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        // 弹窗
+        document.addEventListener('DOMContentLoaded', function() {
+            Swal.fire({
+                text: '对不起，报名通道暂未开放！',
+                icon: 'info',
+                confirmButtonText: '我知道了',
+                confirmButtonColor: '#1691cd',
+                allowOutsideClick: false,
+                allowEscapeKey: false
+            });
+        });
+    </script>
+    
 </body>
 
 </html>    
